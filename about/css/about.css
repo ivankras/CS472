@@ -29,6 +29,11 @@ div.movies ol {
     padding: 0;
     list-style-type: upper-roman;
     list-style-position: inside;
+    transform: rotate(180deg);
+}
+
+div.movies ol > li {
+    transform: rotate(-180deg);
 }
 
 div.movies li.top-movie {
