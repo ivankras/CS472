@@ -1,0 +1,71 @@
+div.box {
+    color: rgb(221, 221, 221);
+    margin: 0 auto;
+    padding: 1%;
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 3px solid rgb(26, 26, 26);
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+}
+
+div.courses ul {
+    padding: 0;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+div.courses ul.taken {
+    color: rgb(241, 72, 72);
+}
+
+div.courses ul.in-progress {
+    color: rgb(61, 201, 61);
+}
+
+div.movies ol {
+    padding: 0;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+div.movies li.top-movie {
+    font-style: italic;
+}
+
+div.moods .happy {
+    font-family: 'Comic Sans MS', fantasy;
+}
+
+div.moods .happy .mood-title::after {
+    content: ' :)';
+}
+
+div.moods .happy .mood-image {
+    border-radius: 40%;
+    max-width: 300px;
+}
+
+div.moods .sad {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div.moods .sad .mood-image {
+    border-radius: 2%;
+    max-width: 270px;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.important-text {
+    font-weight: bolder;
+}
+
+.neighbor-name {
+    text-decoration: underline;
+}
