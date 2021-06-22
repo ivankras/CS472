@@ -70,3 +70,7 @@ footer ul.copyright {
     font-family: 'Courier New', Courier, monospace;
     text-align: right;
 }
+
+.strike-out {
+    text-decoration: line-through;
+}
