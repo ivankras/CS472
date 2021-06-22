@@ -1,0 +1,93 @@
+/* Tablespoon Tooltip */
+.tbsp-tooltip {
+    border-bottom: 1px dotted #404040;
+    position: relative;
+    display: inline-block;
+}
+
+/* Teaspoon Tooltip */
+.tsp-tooltip {
+    border-bottom: 1px dotted #404040;
+    position: relative;
+    display: inline-block;
+}
+
+/* Tablespoon Tooltip text */
+.tbsp-tooltip .tbsp-tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+/* Tooltip arrow */
+.tbsp-tooltip .tbsp-tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+/* Show the tooltip text when you mouse over the tooltip container */
+.tbsp-tooltip:hover .tbsp-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Teaspoon Tooltip text */
+.tsp-tooltip .tsp-tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+  
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+/* Tooltip arrow */
+.tsp-tooltip .tsp-tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+/* Show the tooltip text when you mouse over the tooltip container */
+.tsp-tooltip:hover .tsp-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}

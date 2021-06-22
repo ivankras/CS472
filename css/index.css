@@ -7,7 +7,7 @@ header {
     margin: 0;
     padding: 1%;
     text-align: center;
-    background-image: url('images/background.jpg');
+    background-image: url('../images/background.jpg');
     background-size: cover;
 }
 
@@ -25,4 +25,17 @@ div.pages-list {
 img.profile-img {
     border-radius: 50%;
     max-width: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p::first-letter {
+    text-transform: uppercase;
+    font-size: 1.5em;
 }
