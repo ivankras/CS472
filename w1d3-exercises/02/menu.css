@@ -1,0 +1,13 @@
+ul {
+    /* float: center; */
+    text-align: center;
+    background-color: red;
+    padding: 1em 1em 1em 1em;
+}
+
+li {
+    display: inline;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}

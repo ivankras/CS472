@@ -1,0 +1,22 @@
+body {
+    width: 500px;
+    background-color: lightgray;
+}
+
+h1 {
+    background-color: yellow;
+}
+
+h2, p {
+    margin: 0;
+}
+
+div.area {
+    margin: 10px;
+}
+
+div.area1, div.area2 {
+    background-color: lightblue;
+    float: right;
+    max-width: 100px;
+}
