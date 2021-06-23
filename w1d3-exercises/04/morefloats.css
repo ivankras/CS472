@@ -1,0 +1,24 @@
+#a, #b {
+	width: 100px;
+	height: 100px;
+	font: 30pt bold Helvetica, Arial, sans-serif;
+	line-height: 100px;
+	text-align: center;
+}
+
+#a {
+	/* float: left; */
+	display: block;
+	background-color: lightblue;
+}
+
+#b {
+	float: right;
+	clear: left;
+	background-color: pink;
+}
+
+#c {
+	text-align: right;
+	background-color: lightgray;
+}
