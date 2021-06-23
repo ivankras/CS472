@@ -11,7 +11,7 @@ li.main-elem {
     max-width: 300px;
     margin: 0 auto;
     margin-bottom: 1%;
-    background-color: rgb(26, 26, 26);
+    background-color: rgb(32, 32, 32);
 }
 
 li.main-elem a:hover {
@@ -46,4 +46,9 @@ li.main-elem:hover {
     border: 3px solid #FFFFFF;
     border-radius: 10px;
     background-color: rgb(100, 100, 100);
+}
+
+div.pages-list {
+    text-align: center;
+    padding-top: 1em;
 }

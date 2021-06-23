@@ -17,11 +17,6 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-div.pages-list {
-    text-align: center;
-    padding-top: 1em;
-}
-
 img.profile-img {
     border-radius: 50%;
     max-width: 150px;
