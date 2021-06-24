@@ -1,0 +1,26 @@
+div.navbar {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    text-align: center;
+    background-color: darkslategray;
+    color: whitesmoke;
+}
+
+div.navbar a {
+    font-size: 12pt;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1em 1em;
+}
+
+div.navbar a:hover {
+    background-color: lightblue;
+    color: darkslategray;
+}
+
+@media only screen and (min-width: 600px) {
+    div.navbar {
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+
+header {
+    padding: 1em;
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24pt;
+    color: darkslategray;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    background-color: darkslategray;
+    padding: 1em;
+}
+
+h2 {
+    font-size: 12pt;
+    color: whitesmoke;
+    margin: 0;
+}
