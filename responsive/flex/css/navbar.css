@@ -1,6 +1,7 @@
 div.navbar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     vertical-align: middle;
     text-align: center;
     background-color: darkslategray;
@@ -18,10 +19,4 @@ div.navbar a {
 div.navbar a:hover {
     background-color: lightblue;
     color: darkslategray;
-}
-
-@media only screen and (min-width: 600px) {
-    div.navbar {
-        flex-direction: row;
-    }
 }
