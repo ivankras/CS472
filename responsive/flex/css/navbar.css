@@ -1,0 +1,22 @@
+div.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    text-align: center;
+    background-color: darkslategray;
+    color: whitesmoke;
+}
+
+div.navbar a {
+    font-size: 12pt;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1em 1em;
+    border: 1px solid black;
+}
+
+div.navbar a:hover {
+    background-color: lightblue;
+    color: darkslategray;
+}

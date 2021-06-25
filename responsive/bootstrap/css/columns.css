@@ -1,0 +1,22 @@
+div.row {
+    height: 300px;
+}
+
+#column1 {
+    background-color: dimgray;
+}
+
+#column2 {
+    background-color: gray;
+    order: 1;
+}
+
+#column3 {
+    background-color: darkgrey;
+}
+
+@media only screen and (min-width: 576px) {
+    #column2 {
+        order: 0;
+    }
+}
