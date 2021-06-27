@@ -10,6 +10,7 @@ window.onload = function () {
 
     let animationIdx;
     let animationTimer;
+    let running = false;
     let refreshRate = 250; // ms
 
     const textArea = document.getElementById('text-area');
