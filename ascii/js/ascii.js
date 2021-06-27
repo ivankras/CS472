@@ -82,6 +82,6 @@ window.onload = function () {
     }
 
     function setTurbo() {
-        refreshRate = turbo.value ? 50 : 250;
+        refreshRate = turbo.checked ? 50 : 250;
     }
 };
