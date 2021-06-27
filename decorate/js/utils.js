@@ -1,6 +1,10 @@
 window.onload = function(){
     'use strict';
     
+    // Homepage
+    const homepage = document.getElementById('homepage');
+    homepage.onclick = function() { location.href = '/'; };
+
     // Make text bigger
     const biggerButton = document.getElementById('bigger');
     biggerButton.onclick = enlargeText;

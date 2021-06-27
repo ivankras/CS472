@@ -1,4 +1,10 @@
 window.onload = function () {
+    'use strict';
+
+    // Homepage
+    const homepage = document.getElementById('homepage');
+    homepage.onclick = function() { location.href = '/'; };
+
     let boxInText = '';
     let selectedAnimation = ANIMATIONS['Blank'];
 
