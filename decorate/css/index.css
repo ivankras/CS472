@@ -31,3 +31,8 @@ fieldset textarea.big {
     color: green;
     text-decoration: underline;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}

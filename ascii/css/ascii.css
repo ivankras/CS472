@@ -14,6 +14,13 @@ legend {
 button{
     width: 47%;
 }
+button#homepage {
+    width: 100%;
+}
+button#homepage > a {
+    text-decoration: none;
+    color: black;
+}
 body{
     font-weight: bold;
     text-align: center;
