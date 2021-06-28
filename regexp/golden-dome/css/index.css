@@ -1,0 +1,43 @@
+.navbar {
+    background-color: #1992e9;
+}
+
+.navbar .title {
+    color: white;
+    font-size: 16pt;
+    padding: 0.5em;
+    margin-right: 2em;
+}
+
+.hello {
+    color: white;
+    font-size: 16pt;
+    margin-right: 1em;
+}
+
+.nav-link {
+    color: white;
+    font-size: 14pt;
+    padding: 0.6em;
+    margin: 0 1em;
+}
+
+.addbar {
+    border-left: 1px solid white;
+}
+
+.col {
+    padding: 1em;
+}
+
+.buttons {
+    text-align: right;
+}
+
+.buttons button {
+    margin: 0 1em;
+}
+
+#homepage {
+    margin-right: 1em;
+}
