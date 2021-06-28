@@ -72,3 +72,9 @@ function filterLongWords(arrayOfWords, i) {
         return ('' + word).length > i;
     }, []);
 }
+
+window.onload = () => {
+    // Homepage
+    const homepage = document.getElementById('homepage');
+    homepage.onclick = function() { location.href = '/'; };
+};
