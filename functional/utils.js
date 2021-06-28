@@ -47,12 +47,6 @@ describe('filterLongWords', () => {
     it('returns undefined for undefined input', () => {
         assert.strictEqual(undefined, filterLongWords(undefined, 0));
     });
-    // it('returns undefined for undefined input', () => {
-    //     assert.strictEqual(undefined, filterLongWords(undefined, _));
-    // });
-    // it('returns undefined for undefined input', () => {
-    //     assert.strictEqual(undefined, filterLongWords(undefined, _));
-    // });
 });
 
 // Define a function sum() and a function multiply() that sums and multiplies
