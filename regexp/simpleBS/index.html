@@ -12,23 +12,25 @@
             <form>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
-                    <input 
+                    <input
+                        required
                         type="password"
                         class="form-control"
                         id="exampleInputPassword1"
                         placeholder="Password"
-                        pattern="(?=\d+)(?=[a-z]*)(?=[A-Z]).{8,}"
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}"
                         title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
                     >
                 </div>
                 <div class="form-group">
                     <label for="urlEx">URL</label>
-                    <input 
+                    <input
+                        required 
                         id="urlEx"
                         class="form-control"
                         type="url"
