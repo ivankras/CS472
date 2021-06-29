@@ -26,6 +26,10 @@
     border-left: 1px solid white;
 }
 
+#products, #suppliers {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .col {
     padding: 1em;
 }
@@ -40,4 +44,7 @@
 
 #homepage {
     margin-right: 1em;
+    color: black;
+    background-color: lightgray;
+    vertical-align: middle;
 }

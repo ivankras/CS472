@@ -15,15 +15,15 @@
                     MUM Golden Dome Market ::: SRM System
                 </li>
                 <li class="nav-item addbar">
-                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link disabled" id="products" href="#">Products</a>
                 </li>
                 <li class="nav-item addbar">
-                    <a class="nav-link" href="#">Suppliers</a>
+                    <a class="nav-link disabled" id="suppliers" href="#">Suppliers</a>
                 </li>
             </ul>
             <div>
                 <span class="hello">Hello!</span>
-                <button class="btn btn-primary" id="homepage">Homepage</button>
+                <button class="btn" id="homepage">Homepage</button>
             </div>
         </nav>
         <div class="container-fluid">
@@ -41,11 +41,11 @@
                         >
                     </div>
                     <div class="col">
-                        <label for="name">Quantity in Stock</label>
+                        <label for="quantity">Quantity in Stock</label>
                         <input
                             type="text"
                             class="form-control"
-                            id="name"
+                            id="quantity"
                             value="0"
                             pattern="[0-9]+"
                             title="Only natural numbers"
@@ -89,33 +89,22 @@
                         >
                     </div>
                     <div class="col">
-                        <label for="productNo">Date Supplied</label>
+                        <label for="datesup">Date Supplied</label>
                         <input
                             type="date"
                             class="form-control"
-                            id="productNo"
+                            id="datesup"
                             pattern="[1-9][0-9]*"
                             title="Product number > 0"
                             required
                         >
+                        <small id="dateAdvice" class="form-text text-muted">Enter a valid Date</small>
                     </div>
                 </div>
                 <div class="col buttons">
                     <button type="submit" class="btn btn-outline-secondary">Reset</button>
                     <button class="btn btn-outline-danger">Cancel</button>
                     <button type="submit" class="btn btn-outline-primary">Add Product</button>
-                </div>
-                <hr/>
-                <div class="col validators">
-                    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fivankras.github.io%2Fregexp%2Fgolden-dome%2F">
-                        <img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="Valid HTML!"/>
-                    </a>
-                    <a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fivankras.github.io%2Fregexp%2Fgolden-dome%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
-                        <img src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!"/>
-                    </a>
-                    <a href="http://mumstudents.org/jscheck/check.php?v=jslint&uri=https%3A%2F%2Fivankras.github.io%2Fregexp%2Fgolden-dome%2F">
-                      <img src="http://mumstudents.org/jscheck/jscheck-small.png" alt="Valid JS!"/>
-                    </a>
                 </div>
             </form>
         </div>
