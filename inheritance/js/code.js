@@ -5,12 +5,12 @@ window.onload = () => {
 };
 
 // Exercise 1
-String.prototype.filter = function(takeOut) {
+String.prototype.filter = function(...takeOut) {
     if (!takeOut) {
         return this.toString();
     }
 
-    return this.split(' ').filter(elem => elem !== takeOut).join(' ');
+    return this.split(' ').filter(elem => !takeOut.includes(elem)).join(' ');
 };
 
 // Exercise 2
