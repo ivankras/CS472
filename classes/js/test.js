@@ -282,15 +282,11 @@ describe('CheckingAccount', () => {
  * NOTE: all these tests share a bank because of the static #nextNumber attribute (requested on the assignment); I believe it should not be static.
  */
 describe('Bank', () => {
-    let bank;
-
-    before(() => {
-        bank = new Bank();
-    })
-
+    
     describe('addAccount', () => {
         
         it('after adding an Account, the bank has one account with index 0', () => {
+            let bank = new Bank();
             bank.addAccount();
             assert.strictEqual((new Account(0)).toString(), bank.accountReport());
         });
@@ -300,6 +296,7 @@ describe('Bank', () => {
     describe('addSavingsAccount', () => {
         
         it('after adding a SavingsAccount, the bank has one savings account', () => {
+            let bank = new Bank();
             bank.addSavingsAccount(1);
             assert.strictEqual((new SavingsAccount(1, 1)).toString(), bank.accountReport().split('\n')[1]);
         });
@@ -309,6 +306,7 @@ describe('Bank', () => {
     describe('addCheckingAccount', () => {
 
         it('after adding an CheckingAccount, the bank has one checking account', () => {
+            let bank = new Bank();
             bank.addCheckingAccount(100);
             assert.strictEqual((new CheckingAccount(2, 100)).toString(), bank.accountReport().split('\n')[2]);
         });
@@ -318,6 +316,7 @@ describe('Bank', () => {
     describe('closeAccount', () => {
 
         it('after creating an account (id 3) and closing it, it is no longer in the bank', () => {
+            let bank = new Bank();
             bank.addAccount();
             bank.closeAccount(3);
             assert.strictEqual(undefined, bank.accountReport().split('\n')[3]);
@@ -328,6 +327,7 @@ describe('Bank', () => {
     describe('accountReport', () => {
 
         it('created accounts\' toString() methods add up into an accountReport', () => {
+            let bank = new Bank();
             const compareToStr = [
                 (new Account(0)).toString(),
                 (new SavingsAccount(1, 1)).toString(),
@@ -341,6 +341,7 @@ describe('Bank', () => {
     describe('endOfMonth', () => {
 
         it('created accounts\' endOfMonth() methods add up into an endOfMonth report', () => {
+            let bank = new Bank();
             const compareToStr = [
                 (new Account(0)).endOfMonth(),
                 (new SavingsAccount(1, 1)).endOfMonth(),
