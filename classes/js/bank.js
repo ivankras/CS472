@@ -1,12 +1,11 @@
 class Bank {
-    static #nextNumber = 0;
-
-    static getNextNumber() {
-        return Bank.#nextNumber++;
-    }
-
     constructor() {
         this._accounts = [];
+    }
+
+    static #nextNumber = 0;
+    static getNextNumber() {
+        return Bank.#nextNumber++;
     }
 
     addAccount() {

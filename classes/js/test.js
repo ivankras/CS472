@@ -298,7 +298,7 @@ describe('Bank', () => {
         it('after adding a SavingsAccount, the bank has one savings account', () => {
             let bank = new Bank();
             bank.addSavingsAccount(1);
-            assert.strictEqual((new SavingsAccount(1, 1)).toString(), bank.accountReport().split('\n')[1]);
+            assert.strictEqual((new SavingsAccount(1, 1)).toString(), bank.accountReport().split('\n')[0]);
         });
 
     });
@@ -308,7 +308,7 @@ describe('Bank', () => {
         it('after adding an CheckingAccount, the bank has one checking account', () => {
             let bank = new Bank();
             bank.addCheckingAccount(100);
-            assert.strictEqual((new CheckingAccount(2, 100)).toString(), bank.accountReport().split('\n')[2]);
+            assert.strictEqual((new CheckingAccount(2, 100)).toString(), bank.accountReport().split('\n')[0]);
         });
 
     });
@@ -328,10 +328,13 @@ describe('Bank', () => {
 
         it('created accounts\' toString() methods add up into an accountReport', () => {
             let bank = new Bank();
+            bank.addAccount();
+            bank.addSavingsAccount(1);
+            bank.addCheckingAccount(100);
             const compareToStr = [
-                (new Account(0)).toString(),
-                (new SavingsAccount(1, 1)).toString(),
-                (new CheckingAccount(2, 100)).toString()
+                (new Account(4)).toString(),
+                (new SavingsAccount(5, 1)).toString(),
+                (new CheckingAccount(6, 100)).toString()
             ].join('\n');
             assert.strictEqual(compareToStr, bank.accountReport());
         })
@@ -342,10 +345,13 @@ describe('Bank', () => {
 
         it('created accounts\' endOfMonth() methods add up into an endOfMonth report', () => {
             let bank = new Bank();
+            bank.addAccount();
+            bank.addSavingsAccount(1);
+            bank.addCheckingAccount(100);
             const compareToStr = [
-                (new Account(0)).endOfMonth(),
-                (new SavingsAccount(1, 1)).endOfMonth(),
-                (new CheckingAccount(2, 100)).endOfMonth()
+                (new Account(7)).endOfMonth(),
+                (new SavingsAccount(8, 1)).endOfMonth(),
+                (new CheckingAccount(9, 100)).endOfMonth()
             ].join('\n');
             assert.strictEqual(compareToStr, bank.endOfMonth());
         })
