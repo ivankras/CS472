@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W4D1 - Shopping Cart</title>
+</head>
+<body>
+    <%- include('header.ejs') %>
+    <%- include('available-prods.ejs') %>
+    <ul>
+        <% for (let pid of Object.keys(products)) { %>
+            <% product = products[pid]; %>
+            <li>
+                <fieldset>
+                    <legend><a href=<%= "/product?pid=" + pid %>>Product <%= pid %></a></legend>
+                    <dl>
+                        <dt>Name</dt>
+                        <dd><%= product.name %></dd>
+                        <dt>Price</dt>
+                        <dd><%= product.price %></dd>
+                        <dt>Quantity</dt>
+                        <dd><%= product.quantity %></dd>
+                    </dl>
+                </fieldset>
+            </li>
+        <% } %>
+        <br/>
+    </ul>
+</body>
+</html>
